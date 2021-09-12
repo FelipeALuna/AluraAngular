@@ -10,7 +10,8 @@ export class AppComponent {
   transferencias:any[] = [];
   transferir($event:any){
     console.log($event)
-    this.transferencias.push ($event);
+    const transferencia = {...$event,data: new Date()}
+    this.transferencias.push (transferencia);
   }
 
 }
