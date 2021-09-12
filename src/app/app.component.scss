@@ -1,17 +1,22 @@
-:root {
-  --primary: #369c38;
-  --secondary: #132A13;
-  --padding: 15px;
-  --cinza : #405040;
-  --cinza-claro: #dedede;
+header {
+  background-color: var(--primary);
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .ativo {
+    display: none;
+  }
 }
 
-* {
-  font-family: "Roboto", sans-serif;
+main {
+  background-color: #fcfcfc;
+  padding: var(--padding);
 }
 
-.container {
-  max-width: 400px;
-  padding: 30px;
-  margin: 0 auto;
-}
