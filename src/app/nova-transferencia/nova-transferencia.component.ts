@@ -12,7 +12,7 @@ import { Component,OnInit, Output,EventEmitter } from '@angular/core';
 })
 export class NovaTransferenciaComponent implements OnInit {
   @Output() aoTransferir:EventEmitter<any> = new EventEmitter();
-  
+
   valor!:number;
   destino!:number;
   constructor() { }
@@ -22,7 +22,7 @@ export class NovaTransferenciaComponent implements OnInit {
   transferir(){
     console.log('O valor dessa variavel é : ' + this.valor)
     console.log(`o destino é ${this.destino}`)
-    this.aoTransferir.emit({valor:this.destino,destino:this.valor})
+    this.aoTransferir.emit({valor:this.valor,destino:this.destino})
   }
   limparCampos(){
     this.destino=0;
